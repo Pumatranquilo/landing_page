@@ -1,0 +1,130 @@
+/*estilo geral*/
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+/*cabeçalho*/
+header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid #00d4ff;
+}
+header .logo img{
+    width: 50px;
+}
+/*conteúdo principal*/
+main{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+/*seção esquerda*/
+.esquerda{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+.esquerda h1{
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #00d4ff;
+}
+.redes-sociais{
+    display: flex; /*alinha os ícones lado a lado*/
+    flex-direction: column;
+    gap: 15px; /*espaço entre os ícones*/
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+}
+.redes-sociais li {
+    text-align: center;
+    display: flex;
+    gap: 10px;
+}
+.redes-sociais li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    transition: tranform  0.3s;
+}
+.redes-sociais li a img {
+width: 40px;
+height: 40px;
+padding-right: 15px;
+transition:ease-in-out tranform 0.3s;
+}
+.redes-sociais li a:hover img{
+    transform: scale(1.2);
+}
+.redes-sociais li a:hover{
+    color: #00d4ff;
+}
+/*seção direita*/
+.direita{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foto-dono{
+    width: 270px;
+    height: 375px;
+    border-radius: 20px;
+    border: 3px solid #00d4ff;
+    box-shadow: 0 0 20px #00d4ff, 0 0 40px rgba(0, 212, 255, 0.5);
+}
+/*footer*/
+footer{
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    border-top:  1px solid #00d4ff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+footer hr{
+    border: 1px solid #00d4ff;
+    margin: 20px auto;
+    width: 80%;
+}
+footer button{
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #00d4ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: backgroung 0.3s;
+}
+footer button:hover{
+    background: #00a3cc;
+}
